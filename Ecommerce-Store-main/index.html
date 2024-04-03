@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Store</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <!-- nav container -->
+    <div class="bg-indigo-50 px-6 md:px-12 fixed z-50 w-full shadow-lg">
+        <nav class="h-16 flex items-center justify-between">
+            <!-- logo -->
+            <div>
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <!-- navlinks -->
+            <ul class="flex items-center gap-4 md:gap-8">
+                <li class="hidden md:block underlineLink font-semibold active"><a href="index.html">Home</a></li>
+                <li class="hidden md:block underlineLink font-semibold"><a href="shop.html">Shop</a></li>
+                <li class="hidden md:block underlineLink font-semibold"><a href="blog.html">Blog</a></li>
+                <li class="hidden md:block underlineLink font-semibold"><a href="about.html">About</a></li>
+                <li class="hidden md:block underlineLink font-semibold"><a href="contact.html">Contact</a></li>
+                <li class="text-3xl md:text-2xl"><a href="cartPage.html"><i class='bx bx-shopping-bag'></i></a></li>
+                <li id="menuIcon" class="block md:hidden text-4xl cursor-pointer"><i class='bx bx-menu-alt-right'></i></li>
+            </ul>
+        </nav>
+
+        <!-- mobile navbar -->
+
+        <div id="navbar" class="block md:hidden absolute top-0 right-0 left-0 w-full h-screen bg-indigo-50 translate-x-full">
+            <i id="closeMenu" class='bx bx-x text-3xl px-2 pt-4 absolute cursor-pointer'></i>
+            <ul class="space-y-3 flex items-center justify-center flex-col h-screen">
+                <li class="text-xl font-semibold hover:text-main-color mobileactive"><a href="index.html">Home</a></li>
+                <li class="text-xl font-semibold hover:text-main-color"><a href="shop.html">Shop</a></li>
+                <li class="text-xl font-semibold hover:text-main-color"><a href="blog.html">Blog</a></li>
+                <li class="text-xl font-semibold hover:text-main-color"><a href="about.html">About</a></li>
+                <li class="text-xl font-semibold hover:text-main-color"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- hero-section -->
+
+    <div class="h-screen bg-cover w-full bg-no-repeat bg-center" style="background-image: url(img/hero4.png); ">
+        <!-- hero content -->
+        <div class="flex justify-center flex-col h-screen px-6 md:px-12 space-y-3">
+            <h2 class="text-xl font-semibold">Trade in offer</h2>
+            <h1 class="text-4xl md:text-5xl font-bold">Super value deals <br> <span class="text-main-color">On all
+                    products</span></h1>
+            <p class="text-sm text-gray-600">Save more with coupons & up to 70% Off!</p>
+            <!-- button -->
+            <a href="shop.html"><button class="bg-main-color text-white w-32 py-2 px-4 cursor-pointer font-semibold transition duration-700 ease-in-out hover:text-main-color hover:bg-white">
+                Shop Now
+            </button></a>
+            
+        </div>
+    </div>
+
+    <!-- featured images -->
+
+    <div class="mx-6 md:mx-12 py-20">
+        <!-- card-container -->
+        <div class="flex items-center justify-center flex-wrap gap-2">
+            <!-- card-1 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f1.png" alt="">
+                <h3 class="bg-pink-200 py-1 font-bold text-sm text-center mt-3">Free Shipping</h3>
+            </div>
+            <!-- card-2 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f2.png" alt="">
+                <h3 class="bg-teal-400 py-1 font-bold text-sm text-center mt-3">Online Order</h3>
+            </div>
+            <!-- card-3 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f3.png" alt="">
+                <h3 class="bg-indigo-200 py-1 font-bold text-sm text-center mt-3">Save money</h3>
+            </div>
+            <!-- card-4 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f4.png" alt="">
+                <h3 class="bg-blue-200 py-1 font-bold text-sm text-center mt-3">Promotion</h3>
+            </div>
+            <!-- card-5 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f5.png" alt="">
+                <h3 class="bg-green-300 py-1 font-bold text-sm text-center mt-3">Promotion</h3>
+            </div>
+            <!-- card-6 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f6.png" alt="">
+                <h3 class="bg-yellow-100 py-1 font-bold text-sm text-center mt-3">F24/7 Support</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- featured products -->
+
+    <div class="px-6 md:px-12 py-8">
+        <h1 class="text-center text-3xl md:text-5xl font-semibold pb-3">Featured Products</h1>
+        <p class="text-center text-gray-400">Summer Collection New Modern Design</p>
+        <!-- featured card container -->
+        <div class="flex items-center justify-center gap-6 flex-wrap py-12">
+            <!-- card 1 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+               <a href="productPage.html"> <img class="rounded-xl" src="img/products/f1.jpg" alt=""></a>
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/f2.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/f3.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/f4.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/f5.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 6 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/f6.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 7 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/f7.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 8 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/f8.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- special offer -->
+
+    <div class="w-full h-auto bg-cover bg-no-repeat" style="background: url('img/banner/b2.jpg');">
+        <div class="flex items-center justify-center flex-col">
+            <div class="text-white text-center py-12 px-6 space-y-3">
+                <h3 class="text-sm font-bold">Repair Services</h3>
+                <h2 class="text-3xl font-bold">Up to <span class="text-red-500">70% Off</span> - All T-Shirts &
+                    Accessories</h2>
+                <button
+                    class="bg-white text-main-color w-40 py-2 px-4 cursor-pointer hover:text-white hover:bg-main-color font-bold transition duration-500">Explore
+                    More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- arrivals section -->
+
+    <div class="mx-6 py-16 md:mx-12">
+        <h1 class="text-center text-3xl md:text-5xl font-semibold pb-3">New Arrivals</h1>
+        <p class="text-center text-gray-400">Summer Collection New Modern Design</p>
+        <!-- arrival card container -->
+        <div class="flex items-center justify-center gap-6 flex-wrap py-12">
+            <!-- card 1 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/n1.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/n2.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/n3.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/n4.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/n5.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 6 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/n6.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 7 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/n7.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+            <!-- card 8 -->
+            <div class="border-2 shadow-md p-4 rounded-xl w-64">
+                <img class="rounded-xl" src="img/products/n8.jpg" alt="">
+                <p class="text-sm text-gray-500 pt-2">adidas</p>
+                <p class="text-sm font-bold">Cartoon Astronout T-Shirt</p>
+                <div class="flex items-end justify-between pt-1">
+                    <div>
+                        <!-- star container -->
+                        <div class="">
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                            <i class='bx bxs-star bx-flip-horizontal text-yellow-400'></i>
+                        </div>
+                        <p class="font-bold text-lg ">$78</p>
+                    </div>
+                    <div>
+                        <i
+                            class='bx bx-cart text-xl text-main-color bg-gray-200 p-2 rounded-full hover:bg-main-color hover:text-white cursor-pointer transition duration-500'></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- some special offers -->
+
+    <div class="w-full gap-6 px-6 md:px-12 pb-16">
+        <!-- offer row 1 -->
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+            <!-- offer 1 -->
+            <div class="w-full h-auto bg-cover bg-no-repeat rounded-xl"
+                style="background: url('img/banner/b17.jpg');  background-repeat: no-repeat; background-size: cover;">
+                <div class="px-6 py-20 flex justify-center flex-col text-white space-y-2">
+                    <h5 class="text-2xl">crazy deals</h5>
+                    <h2 class="text-3xl font-bold">buy 1 get 1 free</h2>
+                    <p>The best classic dress is on sale at cara</p>
+                    <button
+                        class="border-2 border-white w-32 py-2 font-bold hover:bg-white hover:text-main-color transition duration-500">Learn
+                        More</button>
+                </div>
+            </div>
+            <!-- offer 2 -->
+            <div class="w-full  bg-cover rounded-xl"
+                style="background: url('img/banner/b10.jpg'); background-repeat: no-repeat; background-size: cover;">
+                <div class="px-6 py-20 flex justify-center flex-col text-white space-y-2">
+                    <h5 class="text-2xl">spring/summer</h5>
+                    <h2 class="text-3xl font-bold">upcomming season</h2>
+                    <p>The best classic dress is on sale at cara</p>
+                    <button
+                        class="border-2 border-white w-32 py-2 font-bold hover:bg-white hover:text-main-color transition duration-500">Collection</button>
+                </div>
+            </div>
+        </div>
+        <!-- offer row 2 -->
+        <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <!-- offer 1 -->
+            <div class="w-full h-auto md:h-52 rounded-xl"
+                style="background: url('img/banner/b7.jpg');  background-repeat: no-repeat; background-size: cover;">
+                <div class="px-6 py-10 flex justify-center flex-col text-white space-y-2">
+                    <h2 class="text-3xl font-bold uppercase">Season Sale</h2>
+                    <h5 class="text-xl font-bold text-red-500">Winter Collection - 50% Off</h5>
+                </div>
+            </div>
+            <!-- offer 2 -->
+            <div class="w-full h-auto md:h-52 bg-cover rounded-xl"
+                style="background: url('img/banner/b4.jpg'); background-repeat: no-repeat; background-size: cover;">
+                <div class="px-6 py-10 flex justify-center flex-col text-white space-y-2">
+                    <h2 class="text-3xl font-bold uppercase">New Footwear collection</h2>
+                    <h5 class="text-2xl text-red-600">Spring / Summer 2024</h5>
+                </div>
+            </div>
+            <!-- offer 3 -->
+            <div class="w-full h-auto md:h-52 bg-cover rounded-xl"
+                style="background: url('img/banner/b16.jpg'); background-repeat: no-repeat; background-size: auto;">
+                <div class="px-6 py-10 flex justify-center flex-col text-white space-y-2">
+                    <h2 class="text-3xl font-bold uppercase">T-Shirts</h2>
+                    <h5 class="text-2xl text-red-600">Now Trendy Prints</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- newsletter -->
+
+    <div
+        class="w-full px-6 md:px-12 py-12 bg-blue-950 flex items-start md:items-center justify-between flex-col md:flex-row">
+        <div class="w-full md:w-1/2 text-white">
+            <h1 class="text-3xl font-semibold pb-2">Sign Up For Newsletter</h1>
+            <p class="text-sm text-gray-400 font-semibold">Get E-mail updates about our latest shop and <span
+                    class="text-yellow-600">special offers.</span> </p>
+        </div>
+        <div class="w-full md:w-2/5 mt-8 md:mt-0 bg-white flex items-center justify-between">
+            <input class="w-full p-3 border-none outline-none font-semibold" type="text"
+                placeholder="Your Email Address">
+            <button class="bg-main-color text-white w-32 py-3">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="px-6 md:px-12 pt-12 flex items-start justify-between flex-wrap">
+        <!-- col 1 -->
+        <div class="max-w-md">
+            <img src="img/logo.png" alt="">
+            <p class="font-bold text-sm py-6">Content</p>
+            <h5 class="text-sm text-gray-400"><span class="font-semibold text-black">Address: </span>562 Wallington
+                Road, Street 32 San Francisco</h5>
+            <h5 class="text-sm text-gray-400"><span class="font-semibold text-black">Phone: </span>+01 2222 365/(+91)
+                0123456789</h5>
+            <h5 class="text-sm text-gray-400"><span class="font-semibold text-black">Hours: </span>10:00 - 18:00.Mon -
+                Sat</h5>
+            <p class="text-sm font-bold py-6">Follow Us</p>
+            <!-- social icons -->
+            <div class="flex items-center gap-2">
+                <i class='bx bxl-facebook text-xl'></i>
+                <i class='bx bxl-twitter text-xl'></i>
+                <i class='bx bxl-instagram-alt text-xl'></i>
+                <i class='bx bxl-pinterest text-xl'></i>
+                <i class='bx bxl-youtube text-xl'></i>
+            </div>
+        </div>
+        <!-- col 2 -->
+        <div class="max-w-2xl mt-6 md:mt-0">
+            <!-- col 2 row -->
+            <div class="w-1/2 flex justify-between items-center gap-10">
+                <!-- sub col 1 -->
+                <div class="">
+                    <h3 class="font-bold pb-3">About</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">About Us</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Delivery Information</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Privacy Policy</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Terms & Condition</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap">Contact Us</h3>
+                </div>
+                <!-- sub col 2 -->
+                <div class="">
+                    <h3 class="font-bold pb-3">My Account</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Sign In</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">View Cart</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">my Wishlist</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Track My Order</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap">Help</h3>
+                </div>
+            </div>
+
+        </div>
+        <!-- col 3 -->
+        <div class="max-w-md mt-6 md:mt-0">
+            <h5 class="font-bold pb-3">Instal App</h5>
+            <p class="text-gray-400 text-sm whitespace-nowrap pb-1">From App Store or Google Store</p>
+            <div class="flex gap-2 py-3 flex-col md:flex-row">
+                <img class="border-2" src="img/pay/app.jpg" alt="">
+                <img class="border-2" src="img/pay/play.jpg" alt="">
+            </div>
+            <p class="text-gray-400 text-sm whitespace-nowrap pb-3">Secured Payment Gateway</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    </footer>
+
+    <p class="text-gray-400 text-center py-6"><i class='bx bx-copyright'></i>2024. Hamaad Afzal - HTML CSS Ecommerce
+        Template</p>
+
+    <!-- top btn -->
+
+    <button id="scrollToTopBtn" class="hidden fixed bottom-8 right-6 bg-main-color text-white border-none rounded-md p-2 cursor-pointer text-2xl"><i class='bx bxs-arrow-to-top text-3xl font-bold'></i></button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

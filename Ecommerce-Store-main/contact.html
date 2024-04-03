@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Store | Contact Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <!-- nav container -->
+    <div class="bg-indigo-50 px-6 md:px-12 fixed z-50 w-full shadow-lg">
+        <nav class="h-16 flex items-center justify-between">
+            <!-- logo -->
+            <div>
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <!-- navlinks -->
+            <ul class="flex items-center gap-4 md:gap-8">
+                <li class="hidden md:block underlineLink font-semibold"><a href="index.html">Home</a></li>
+                <li class="hidden md:block underlineLink font-semibold"><a href="shop.html">Shop</a></li>
+                <li class="hidden md:block underlineLink font-semibold"><a href="blog.html">Blog</a></li>
+                <li class="hidden md:block underlineLink font-semibold"><a href="about.html">About</a></li>
+                <li class="hidden md:block underlineLink font-semibold active"><a href="contact.html">Contact</a></li>
+                <li class="text-3xl md:text-2xl"><a href="cartPage.html"><i class='bx bx-shopping-bag'></i></a></li>
+                <li id="menuIcon" class="block md:hidden text-4xl cursor-pointer"><i class='bx bx-menu-alt-right'></i></li>
+            </ul>
+        </nav>
+
+        <!-- mobile navbar -->
+
+        <div id="navbar" class="block md:hidden absolute top-0 right-0 left-0 w-full h-screen bg-indigo-50 translate-x-full">
+            <i id="closeMenu" class='bx bx-x text-3xl px-2 pt-4 absolute cursor-pointer'></i>
+            <ul class="space-y-3 flex items-center justify-center flex-col h-screen">
+                <li class="text-xl font-semibold hover:text-main-color "><a href="index.html">Home</a></li>
+                <li class="text-xl font-semibold hover:text-main-color"><a href="shop.html">Shop</a></li>
+                <li class="text-xl font-semibold hover:text-main-color"><a href="blog.html">Blog</a></li>
+                <li class="text-xl font-semibold hover:text-main-color"><a href="about.html">About</a></li>
+                <li class="text-xl font-semibold hover:text-main-color mobileactive"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!-- hero-section -->
+
+    <div class=" h-autobg-cover w-full bg-center bg-no-repeat" style="background-image: url(img/about/banner.png); ">
+        <!-- hero content -->
+        <div class="flex justify-center flex-col px-6 pt-36 pb-24 md:px-12 space-y-3 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-semibold">#let's_talk</h1>
+            <p class="text-sm">LEAVE A MESSAGE. We love to hear from you!</p>
+        </div>
+    </div>
+
+    <!-- contact section -->
+
+    <div class="mx-6 py-12 md:mx-12 flex items-start justify-between flex-col md:flex-row gap-8">
+        <!-- left container -->
+        <div class="w-full md:w-1/2 space-y-4">
+            <p class="text-sm text-gray-500">GET IN TOUCH</p>
+            <h2 class="text-3xl font-bold text-balance">Visit one of our agency locations or contact us today</h2>
+            <h4 class="text-sm font-bold">Head Office</h4>
+            <div class="space-y-2">
+                <p class="text-sm text-gray-400"><i class='bx bxs-business text-lg text-gray-600 pr-3'></i>56 Glassfold
+                    Street
+                    Glassgow GL IUL New York</p>
+                <p class="text-sm text-gray-400"><i
+                        class='bx bxs-envelope  text-lgtext-gray-600 pr-3'></i>contact@example.com
+                </p>
+                <p class="text-sm text-gray-400"><i class='bx bxs-phone text-lg text-gray-600 pr-3'></i>+ 92 1111 222 33
+                </p>
+                <p class="text-sm text-gray-400"><i
+                        class='bx bx-stopwatch text-lg align-middletext-gray-600 pr-3'></i>Monday to Saturday:
+                    9:00am to 16pm</p>
+
+            </div>
+        </div>
+        <!-- right container -->
+        <div class="w-full md:w-1/2">
+            <iframe class="w-full h-80"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15248.745031970186!2d-74.02425298273786!3d40.6798467933434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1704541862701!5m2!1sen!2s"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- contact form -->
+
+    <div class="mx-6 md:mx-12 my-12 mb-20 px-4 py-6 md:p-16 border-2 border-gray-500">
+        <!-- contact container -->
+        <div class="flex items-start justify-between flex-col md:flex-row gap-10">
+            <!-- left container -->
+            <div class="w-full md:w-8/12">
+                <p class="text-sm text-gray-400">LEAVE A MESSAGE</p>
+                <h3 class="text-2xl font-bold pt-4 pb-6">We love to hear from you</h3>
+                <form action="" class="space-y-4">
+                    <input class="border-2 border-gray-300 w-full p-2 text-[14px]" type="text" name=""
+                        placeholder="Your Name" id="">
+                    <input class="border-2 border-gray-300 w-full p-2 text-[14px]" type="email" name=""
+                        placeholder="E-mail" id="">
+                    <input class="border-2 border-gray-300 w-full p-2 text-[14px]" type="text" name=""
+                        placeholder="Subject" id="">
+                    <textarea class="border-2 border-gray-300 w-full p-2 text-[14px]" name="" id="" cols="30" rows="10"
+                        placeholder="Your Message"></textarea>
+                    <button
+                        class="bg-main-color text-white w-28 py-2 px-6 cursor-pointer hover:text-main-color border-2 hover:bg-white hover:border-main-color font-semibold transition duration-500">Submit</button>
+                </form>
+            </div>
+            <!-- right container -->
+
+            <div class="w-80 space-y-8">
+                <div class="flex items-start">
+                    <img class="w-16 h-16" src="img/people/1.png" alt="">
+                    <div class="pl-3">
+                        <h2 class="text-xl font-bold">John Doe</h2>
+                        <p class="text-sm text-gray-400">Senior Markiting Manager</p>
+                        <p class="text-sm text-gray-400">Phone + 000 123 0000 77 88</p>
+                        <p class="text-sm text-gray-400">E-mail contact@email.com</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <img class="w-16 h-16" src="img/people/2.png" alt="">
+                    <div class="pl-3">
+                        <h2 class="text-xl font-bold">William Smith</h2>
+                        <p class="text-sm text-gray-400">Senior Markiting Manager</p>
+                        <p class="text-sm text-gray-400">Phone + 000 123 0000 77 88</p>
+                        <p class="text-sm text-gray-400">E-mail contact@email.com</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <img class="w-16 h-16" src="img/people/3.png" alt="">
+                    <div class="pl-3">
+                        <h2 class="text-xl font-bold">Emma Stone</h2>
+                        <p class="text-sm text-gray-400">Senior Markiting Manager</p>
+                        <p class="text-sm text-gray-400">Phone + 000 123 0000 77 88</p>
+                        <p class="text-sm text-gray-400">E-mail contact@email.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- newsletter -->
+
+    <div
+        class="w-full px-6 md:px-12 py-12 bg-blue-950 flex items-start md:items-center justify-between flex-col md:flex-row">
+        <div class="w-full md:w-1/2 text-white">
+            <h1 class="text-3xl font-semibold pb-2">Sign Up For Newsletter</h1>
+            <p class="text-sm text-gray-400 font-semibold">Get E-mail updates about our latest shop and <span
+                    class="text-yellow-600">special offers.</span> </p>
+        </div>
+        <div class="w-full md:w-2/5 mt-8 md:mt-0 bg-white flex items-center justify-between">
+            <input class="w-full p-3 border-none outline-none font-semibold" type="text"
+                placeholder="Your Email Address">
+            <button class="bg-main-color text-white w-32 py-3">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="px-6 md:px-12 pt-12 flex items-start justify-between flex-wrap">
+        <!-- col 1 -->
+        <div class="max-w-md">
+            <img src="img/logo.png" alt="">
+            <p class="font-bold text-sm py-6">Content</p>
+            <h5 class="text-sm text-gray-400"><span class="font-semibold text-black">Address: </span>562 Wallington
+                Road, Street 32 San Francisco</h5>
+            <h5 class="text-sm text-gray-400"><span class="font-semibold text-black">Phone: </span>+01 2222 365/(+91)
+                0123456789</h5>
+            <h5 class="text-sm text-gray-400"><span class="font-semibold text-black">Hours: </span>10:00 - 18:00.Mon -
+                Sat</h5>
+            <p class="text-sm font-bold py-6">Follow Us</p>
+            <!-- social icons -->
+            <div class="flex items-center gap-2">
+                <i class='bx bxl-facebook text-xl'></i>
+                <i class='bx bxl-twitter text-xl'></i>
+                <i class='bx bxl-instagram-alt text-xl'></i>
+                <i class='bx bxl-pinterest text-xl'></i>
+                <i class='bx bxl-youtube text-xl'></i>
+            </div>
+        </div>
+        <!-- col 2 -->
+        <div class="max-w-2xl mt-6 md:mt-0">
+            <!-- col 2 row -->
+            <div class="w-1/2 flex justify-between items-center gap-10">
+                <!-- sub col 1 -->
+                <div class="">
+                    <h3 class="font-bold pb-3">About</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">About Us</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Delivery Information</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Privacy Policy</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Terms & Condition</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap">Contact Us</h3>
+                </div>
+                <!-- sub col 2 -->
+                <div class="">
+                    <h3 class="font-bold pb-3">My Account</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Sign In</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">View Cart</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">my Wishlist</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Track My Order</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap">Help</h3>
+                </div>
+            </div>
+
+        </div>
+        <!-- col 3 -->
+        <div class="max-w-md mt-6 md:mt-0">
+            <h5 class="font-bold pb-3">Instal App</h5>
+            <p class="text-gray-400 text-sm whitespace-nowrap pb-1">From App Store or Google Store</p>
+            <div class="flex gap-2 py-3 flex-col md:flex-row">
+                <img class="border-2" src="img/pay/app.jpg" alt="">
+                <img class="border-2" src="img/pay/play.jpg" alt="">
+            </div>
+            <p class="text-gray-400 text-sm whitespace-nowrap pb-3">Secured Payment Gateway</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    </footer>
+
+    <p class="text-gray-400 text-center py-6"><i class='bx bx-copyright'></i>2024. Hamaad Afzal - HTML CSS Ecommerce
+        Template</p>
+
+    <!-- top btn -->
+
+    <button id="scrollToTopBtn"
+        class="hidden fixed bottom-8 right-6 bg-main-color text-white border-none rounded-md p-2 cursor-pointer text-2xl"><i
+            class='bx bxs-arrow-to-top text-3xl font-bold'></i></button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

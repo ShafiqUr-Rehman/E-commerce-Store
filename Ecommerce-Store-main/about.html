@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Store | Blog Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <!-- nav container -->
+    <div class="bg-indigo-50 px-6 md:px-12 fixed z-50 w-full shadow-lg">
+        <nav class="h-16 flex items-center justify-between">
+            <!-- logo -->
+            <div>
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <!-- navlinks -->
+            <ul class="flex items-center gap-4 md:gap-8">
+                <li class="hidden md:block underlineLink font-semibold"><a href="index.html">Home</a></li>
+                <li class="hidden md:block underlineLink font-semibold"><a href="shop.html">Shop</a></li>
+                <li class="hidden md:block underlineLink font-semibold"><a href="blog.html">Blog</a></li>
+                <li class="hidden md:block underlineLink font-semibold active"><a href="about.html">About</a></li>
+                <li class="hidden md:block underlineLink font-semibold"><a href="contact.html">Contact</a></li>
+                <li class="text-3xl md:text-2xl"><a href="cartPage.html"><i class='bx bx-shopping-bag'></i></a></li>
+                <li id="menuIcon" class="block md:hidden text-4xl cursor-pointer"><i class='bx bx-menu-alt-right'></i></li>
+            </ul>
+        </nav>
+
+        <!-- mobile navbar -->
+
+        <div id="navbar" class="block md:hidden absolute top-0 right-0 left-0 w-full h-screen bg-indigo-50 translate-x-full">
+            <i id="closeMenu" class='bx bx-x text-3xl px-2 pt-4 absolute cursor-pointer'></i>
+            <ul class="space-y-3 flex items-center justify-center flex-col h-screen">
+                <li class="text-xl font-semibold hover:text-main-color"><a href="index.html">Home</a></li>
+                <li class="text-xl font-semibold hover:text-main-color"><a href="shop.html">Shop</a></li>
+                <li class="text-xl font-semibold hover:text-main-color"><a href="blog.html">Blog</a></li>
+                <li class="text-xl font-semibold hover:text-main-color mobileactive"><a href="about.html">About</a></li>
+                <li class="text-xl font-semibold hover:text-main-color"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+    <!-- hero-section -->
+
+    <div class=" h-autobg-cover w-full bg-center bg-no-repeat" style="background-image: url(img/about/banner.png); ">
+        <!-- hero content -->
+        <div class="flex justify-center flex-col px-6 pt-36 pb-24 md:px-12 space-y-3 text-center text-white">
+            <h1 class="text-4xl md:text-5xl font-semibold">#KnowUs</h1>
+            <p class="text-sm">Read all case studies about our products!</p>
+        </div>
+    </div>
+
+
+    <!-- about section -->
+
+    <div class="mx-6 py-12 md:mx-12 flex items-center justify-between flex-col md:flex-row gap-12">
+        <!-- left section -->
+        <div class="w-full md:w-1/2">
+            <img src="https://img.freepik.com/free-vector/shopping-people-flat-composition-with-indoor-view-clothing-store-with-checkout-cashier-female-visitors-vector-illustration_1284-80727.jpg?size=626&ext=jpg&ga=GA1.1.606099105.1704345729&semt=ais"
+                alt="">
+        </div>
+        <!-- right container -->
+        <div class="w-full pt-5 md:w-1/2 md:pt-0 space-y-6">
+            <h1 class="text-4xl md:text-5xl text-center md:text-left font-bold">Who We Are?</h1>
+            <p class="text-sm text-gray-400 text-center md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam
+                qui debitis expedita accusantium quia provident laboriosam quaerat, accusamus a inventore quam id.
+                Praesentium, perferendis! Sint, illum magnam libero voluptas dolor aliquam voluptatum? Officia sed
+                blanditiis quae unde tempora nostrum, quia dolores placeat reprehenderit in esse est! Expedita neque
+                tempora in, aliquid libero optio, culpa error saepe inventore repudiandae alias!</p>
+            <marquee class="w-full bg-gray-300" direction="right">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias necessitatibus dolorum dolor eaque
+                iusto mollitia quibusdam aut sed itaque vero.
+            </marquee>
+        </div>
+    </div>
+
+    <!-- app video -->
+
+    <div class="flex items-center justify-center flex-col mx-6 pb-10">
+        <h1 class="text-3xl md:text-5xl font-bold my-8">Download Our <span class="underline text-blue-700">App</span></h1>
+        <video class="w-full md:w-4/6 rounded-xl" src="img/about/1.mp4" controls autoplay loop></video>
+    </div>
+
+    <!-- featured images -->
+
+    <div class="mx-6 md:mx-12 py-20">
+        <!-- card-container -->
+        <div class="flex items-center justify-center flex-wrap gap-2">
+            <!-- card-1 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f1.png" alt="">
+                <h3 class="bg-pink-200 py-1 font-bold text-sm text-center mt-3">Free Shipping</h3>
+            </div>
+            <!-- card-2 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f2.png" alt="">
+                <h3 class="bg-teal-400 py-1 font-bold text-sm text-center mt-3">Online Order</h3>
+            </div>
+            <!-- card-3 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f3.png" alt="">
+                <h3 class="bg-indigo-200 py-1 font-bold text-sm text-center mt-3">Save money</h3>
+            </div>
+            <!-- card-4 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f4.png" alt="">
+                <h3 class="bg-blue-200 py-1 font-bold text-sm text-center mt-3">Promotion</h3>
+            </div>
+            <!-- card-5 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f5.png" alt="">
+                <h3 class="bg-green-300 py-1 font-bold text-sm text-center mt-3">Promotion</h3>
+            </div>
+            <!-- card-6 -->
+            <div class="p-4 border-2 w-36 md:w-40">
+                <img src="img/features/f6.png" alt="">
+                <h3 class="bg-yellow-100 py-1 font-bold text-sm text-center mt-3">F24/7 Support</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- newsletter -->
+
+    <div
+        class="w-full px-6 md:px-12 py-12 bg-blue-950 flex items-start md:items-center justify-between flex-col md:flex-row">
+        <div class="w-full md:w-1/2 text-white">
+            <h1 class="text-3xl font-semibold pb-2">Sign Up For Newsletter</h1>
+            <p class="text-sm text-gray-400 font-semibold">Get E-mail updates about our latest shop and <span
+                    class="text-yellow-600">special offers.</span> </p>
+        </div>
+        <div class="w-full md:w-2/5 mt-8 md:mt-0 bg-white flex items-center justify-between">
+            <input class="w-full p-3 border-none outline-none font-semibold" type="text"
+                placeholder="Your Email Address">
+            <button class="bg-main-color text-white w-32 py-3">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="px-6 md:px-12 pt-12 flex items-start justify-between flex-wrap">
+        <!-- col 1 -->
+        <div class="max-w-md">
+            <img src="img/logo.png" alt="">
+            <p class="font-bold text-sm py-6">Content</p>
+            <h5 class="text-sm text-gray-400"><span class="font-semibold text-black">Address: </span>562 Wallington
+                Road, Street 32 San Francisco</h5>
+            <h5 class="text-sm text-gray-400"><span class="font-semibold text-black">Phone: </span>+01 2222 365/(+91)
+                0123456789</h5>
+            <h5 class="text-sm text-gray-400"><span class="font-semibold text-black">Hours: </span>10:00 - 18:00.Mon -
+                Sat</h5>
+            <p class="text-sm font-bold py-6">Follow Us</p>
+            <!-- social icons -->
+            <div class="flex items-center gap-2">
+                <i class='bx bxl-facebook text-xl'></i>
+                <i class='bx bxl-twitter text-xl'></i>
+                <i class='bx bxl-instagram-alt text-xl'></i>
+                <i class='bx bxl-pinterest text-xl'></i>
+                <i class='bx bxl-youtube text-xl'></i>
+            </div>
+        </div>
+        <!-- col 2 -->
+        <div class="max-w-2xl mt-6 md:mt-0">
+            <!-- col 2 row -->
+            <div class="w-1/2 flex justify-between items-center gap-10">
+                <!-- sub col 1 -->
+                <div class="">
+                    <h3 class="font-bold pb-3">About</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">About Us</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Delivery Information</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Privacy Policy</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Terms & Condition</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap">Contact Us</h3>
+                </div>
+                <!-- sub col 2 -->
+                <div class="">
+                    <h3 class="font-bold pb-3">My Account</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Sign In</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">View Cart</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">my Wishlist</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap pb-1">Track My Order</h3>
+                    <h3 class="text-gray-400 text-sm whitespace-nowrap">Help</h3>
+                </div>
+            </div>
+
+        </div>
+        <!-- col 3 -->
+        <div class="max-w-md mt-6 md:mt-0">
+            <h5 class="font-bold pb-3">Instal App</h5>
+            <p class="text-gray-400 text-sm whitespace-nowrap pb-1">From App Store or Google Store</p>
+            <div class="flex gap-2 py-3 flex-col md:flex-row">
+                <img class="border-2" src="img/pay/app.jpg" alt="">
+                <img class="border-2" src="img/pay/play.jpg" alt="">
+            </div>
+            <p class="text-gray-400 text-sm whitespace-nowrap pb-3">Secured Payment Gateway</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    </footer>
+
+    <p class="text-gray-400 text-center py-6"><i class='bx bx-copyright'></i>2024. Hamaad Afzal - HTML CSS Ecommerce
+        Template</p>
+
+
+    <!-- top btn -->
+
+    <button id="scrollToTopBtn"
+        class="hidden fixed bottom-8 right-6 bg-main-color text-white border-none rounded-md p-2 cursor-pointer text-2xl"><i
+            class='bx bxs-arrow-to-top text-3xl font-bold'></i></button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
